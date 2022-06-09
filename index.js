@@ -13,7 +13,8 @@ const saltRounds = 10;
 
 
 const app = express();
-const port = 3001; // Must be different than the port of the React app
+const port = process.env.PORT
+//3001; // Must be different than the port of the React app
 
 app.use(cors());  // https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
 
